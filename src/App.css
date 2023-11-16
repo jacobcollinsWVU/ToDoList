@@ -10,7 +10,7 @@ h1 {
 /* Styling for background and text in list */
 body {
   font-family: 'Palatino Linotype', sans-serif;
-  background-image: url('/amplifyapp/public/galaxy.jpeg');
+  background-image: url('/public/galaxy.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }
