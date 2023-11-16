@@ -1,22 +1,29 @@
 import React, { useState, useRef } from 'react';
 import './App.css';
 
-// Functions to utilize lists
+// Component for TodoList
 const TodoList = () => {
+  
+  // useState and useRef
   const [todos, setTodos] = useState([]);
   const inputRef = useRef(null);
 
   // Function to add items to the list
   const addTodo = () => {
+    // Grab input field value
     const text = inputRef.current.value;
+    // Check for empty box
     if (text.trim() !== '') {
+      // Create new array of todos
       setTodos((prevTodos) => [...prevTodos, text]);
+      // Clear input box after adding todo
       inputRef.current.value = '';
     }
   };
 
   // Function to remove items from the list
   const removeTodo = (index) => {
+    // Uses filter to remove the previous todo
     setTodos((prevTodos) => prevTodos.filter((_, i) => i !== index));
   };
 
@@ -42,12 +49,4 @@ const TodoList = () => {
   );
 };
 
-function App() {
-  return (
-    <div className="App">
-      <TodoList />
-    </div>
-  );
-}
-
-export default App;
+export default TodoList;
