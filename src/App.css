@@ -1,38 +1,81 @@
-.App {
+/* Styling for title */
+h1 {
+  color: white;
+  font-family: 'Palatino Linotype', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 60px; 
+}
+
+/* Styling for background and text in list */
+body {
+  font-family: 'Palatino Linotype', sans-serif;
+  background-image: url('galaxy.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.todo-container {
+  padding-top: 100px;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  margin-bottom: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for box containing listed items */
+.todo-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(82, 21, 66, 0.836);
+  background-color: rgba(0, 0, 0, 0.452);
+  word-wrap: break-word;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for the input box */
+input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 85%;
+  height: 25px;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size: 25px; 
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+/* Styling for the grouping of list items */
+ul {
+  padding: 0;
+}
+
+/* Styling for each item in the list */
+li {
+  margin: 5px 0;
+  padding: 10px; 
+  border: 1px solid #000000; 
+  border-radius: 10px; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.808);
+  word-wrap: break-word;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for buttons */
+button {
+  padding: 5px;
+  background: linear-gradient(to right, #af4caf, #6f45a0);
+  color: #fff; 
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Palatino Linotype,', sans-serif;
+  font-size: 22px;
 }
